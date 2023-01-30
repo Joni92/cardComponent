@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'NM-B';
+    src: url('/assets/font/NeueMontreal-Bold.otf') format("truetype");
+}
+@font-face {
+    font-family: 'NM-L';
+    src: url('/assets/font/NeueMontreal-Light.otf') format("truetype");
+}
+@font-face {
+    font-family: 'NM-M';
+    src: url('/assets/font/NeueMontreal-Medium.otf') format("truetype");
+}
+@font-face {
+    font-family: "NM-R";
+    src: url('../font/NeueMontreal-Regular.otf') format("truetype");
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body {
+    background: #000;
+    position: relative;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.container {
+    width: 550px;
+    height: 150px;
+    color: #fff;
+    font-family: "NM-L", sans-serif; 
+    display: flex;  
+    position: relative;
+    cursor: pointer;
+}
+
+.sub {
+    width: 20%;
+    display: grid;
+    place-content: center;
+}
+
+.dot {
+    content: '';
+    position: absolute;
+    background: #009933;
+    top: 3.9rem;
+    height: .2rem;
+    width: .2rem;
+    border-radius: 50%;
+    left: -.3rem;
+    opacity: 0; 
+    transition: .5s;
+}
+
+.container:hover .dot {
+    opacity: 1;
+}
+ 
+.sub p {
+    font-family: "NM-M", sans-serif;
+    font-size: .8rem;
+    opacity: 0.1;  
+    transition: 1s;
+}
+
+.container:hover .sub p {
+    opacity: .2;  
+}
+
+.main {
+    width: 80%;
+    position: relative; 
+    padding: 0 1rem;
+}
+
+.main h1 {
+    text-transform: uppercase;
+    font-size: 8rem;
+    line-height: 150px;
+    opacity: .5;
+}
+
+.container:hover .main h1 {
+    opacity: 1;
+}
+
+i {
+    font-size: 5rem;
+    position: absolute;
+    top: 0rem;
+    right: -1rem;
+    opacity: 0;
+    transition: .5s;
+}  
+ 
+.container:hover i { 
+    opacity: .1;
+}
+
+.container:hover .main { 
+  text-shadow: 0 0 12px rgba(255,255,255,1) ;
+  
+}
+ 
+
+video {
+    width: 100px;
+    position: absolute; 
+    bottom: 0;
+    right: 0;
+    opacity: .2;
+}
