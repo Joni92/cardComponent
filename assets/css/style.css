@@ -1,18 +1,11 @@
-@font-face {
-    font-family: 'NM-B';
-    src: url('/assets/font/NeueMontreal-Bold.otf') format("truetype");
-}
+
 @font-face {
     font-family: 'NM-L';
-    src: url('/assets/font/NeueMontreal-Light.otf') format("truetype");
+    src: url('./assets/font/NeueMontreal-Light.otf') format("truetype");
 }
 @font-face {
     font-family: 'NM-M';
-    src: url('/assets/font/NeueMontreal-Medium.otf') format("truetype");
-}
-@font-face {
-    font-family: "NM-R";
-    src: url('../font/NeueMontreal-Regular.otf') format("truetype");
+    src: url('./assets/font/NeueMontreal-Medium.otf') format("truetype");
 }
 
 
